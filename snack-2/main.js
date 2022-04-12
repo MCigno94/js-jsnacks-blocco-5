@@ -64,15 +64,15 @@ console.log(maggioreDi15);
 const minoreDi15 = zucchine.filter((zucchina) => zucchina.lunghezza < 15);
 console.log(minoreDi15);
 
-function sum(array) {
+function sum(array, property) {
     let sum = 0;
     array.forEach((element) => {
         //console.log(element.lunghezza);
-        let weight = element.lunghezza;
+        let weight = element[property];
         sum += weight;
     })
     return sum;
 }
 
-console.log(sum(maggioreDi15));
+console.log(sum(maggioreDi15, lunghezza));
 console.log(sum(minoreDi15));
