@@ -27,8 +27,11 @@ let arrayC = [];
 arrayA.forEach(myFunction)
 
 function myFunction(item, i) {
-    arrayC.push(arrayA[i]);
+    arrayC.push(item);
     arrayC.push(arrayB[i]);
+    //console.log(item);
+    //console.log(arrayA[i]);
+    //console.log(arrayB[i]);
 }
 
 console.log(arrayC);
